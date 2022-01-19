@@ -43,7 +43,7 @@ c="y" #Runs the while loop as long as user wants
 
 
 #UI
-print("Welcome to IMS")
+print("Welcome to the Invenotry Tracking Application")
 print()
 print("A-Add an item")
 print("R-Remove an item")
@@ -89,8 +89,8 @@ while(c!= "q" or c!= "Q"):
             stock.update({p_no: p_stock})
             print("The stock of an item cannot be negative, the stock has been set to 0.")
         print()
-        print("Part number: ",p_no," Description: ",description.get(p_no)," Price: ",unit_price.get(p_no)," Stock: ",stock.get(p_no))
-        print("Part was added successfully!")
+        print("Item number: ",p_no," Description: ",description.get(p_no)," Price: ",unit_price.get(p_no)," Stock: ",stock.get(p_no))
+        print("Item was added successfully!")
         print()
         
     elif(c=="E" or c=="e"):#Edit an item
@@ -127,7 +127,7 @@ while(c!= "q" or c!= "Q"):
         
     elif(c=="L" or c=="l"):#List all the items
         print()
-        print("Parts and their prices: ",unit_price)
+        print("Items and their prices: ",unit_price)
         print("Descriptions: ",description)
         print("Stock left of Item: ",stock)
         print()
@@ -135,7 +135,7 @@ while(c!= "q" or c!= "Q"):
         
     elif(c=="S" or c=="s"):#Create Shipment
         print()
-        p_no = int(input("Enter Part number: "))
+        p_no = int(input("Enter Item number: "))
         if(p_no in unit_price):
             if(flag==1):
                 flag=0
