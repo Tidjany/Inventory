@@ -43,7 +43,7 @@ c="y" #Runs the while loop as long as user wants
 
 
 #UI
-print("Welcome to the Invenotry Tracking Application")
+print("Welcome to the Inventory Tracking Application")
 print()
 print("A-Add an item")
 print("R-Remove an item")
